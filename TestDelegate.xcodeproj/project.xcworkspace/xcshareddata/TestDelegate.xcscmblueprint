@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "03E0455141A7BCA0988FDB89F2AFC2D36674B514",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AC753A2F328F99BFA56085F960E051F506099CF7" : 9223372036854775807,
+    "03E0455141A7BCA0988FDB89F2AFC2D36674B514" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B2F5D5A1-A73C-42E1-BA95-461B89150C98",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AC753A2F328F99BFA56085F960E051F506099CF7" : "",
+    "03E0455141A7BCA0988FDB89F2AFC2D36674B514" : "TestDelegate\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TestDelegate",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TestDelegate.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mikru1688\/TestDelegate.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03E0455141A7BCA0988FDB89F2AFC2D36674B514"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mikru1688\/Teaching.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AC753A2F328F99BFA56085F960E051F506099CF7"
+    }
+  ]
+}

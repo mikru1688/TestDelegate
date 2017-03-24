@@ -5,7 +5,6 @@
 //  Created by Frank.Chen on 2017/1/23.
 //  Copyright © 2017年 Frank.Chen. All rights reserved.
 //
-
 import UIKit
 
 class PageA: UIViewController, SelectRowDelegate {
@@ -48,4 +47,3 @@ class PageA: UIViewController, SelectRowDelegate {
     }
     
 }
-

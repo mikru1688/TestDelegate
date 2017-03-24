@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		22070B511E3655C800A626D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22070B501E3655C800A626D5 /* AppDelegate.swift */; };
-		22070B531E3655C800A626D5 /* PageA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22070B521E3655C800A626D5 /* PageA.swift */; };
 		22070B561E3655C800A626D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22070B541E3655C800A626D5 /* Main.storyboard */; };
 		22070B581E3655C800A626D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22070B571E3655C800A626D5 /* Assets.xcassets */; };
 		22070B5B1E3655C800A626D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22070B591E3655C800A626D5 /* LaunchScreen.storyboard */; };
 		22070B631E3656E400A626D5 /* PageB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22070B621E3656E400A626D5 /* PageB.swift */; };
 		22070B651E365A4600A626D5 /* SelectRowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22070B641E365A4600A626D5 /* SelectRowDelegate.swift */; };
+		22BA070A1E8539A600876A26 /* PageA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BA07091E8539A600876A26 /* PageA.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22070B4D1E3655C800A626D5 /* TestDelegate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDelegate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22070B501E3655C800A626D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22070B521E3655C800A626D5 /* PageA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageA.swift; sourceTree = "<group>"; };
 		22070B551E3655C800A626D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22070B571E3655C800A626D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22070B5A1E3655C800A626D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22070B5C1E3655C800A626D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22070B621E3656E400A626D5 /* PageB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageB.swift; sourceTree = "<group>"; };
 		22070B641E365A4600A626D5 /* SelectRowDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectRowDelegate.swift; sourceTree = "<group>"; };
+		22BA07091E8539A600876A26 /* PageA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageA.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			children = (
 				22070B641E365A4600A626D5 /* SelectRowDelegate.swift */,
 				22070B501E3655C800A626D5 /* AppDelegate.swift */,
-				22070B521E3655C800A626D5 /* PageA.swift */,
+				22BA07091E8539A600876A26 /* PageA.swift */,
 				22070B621E3656E400A626D5 /* PageB.swift */,
 				22070B541E3655C800A626D5 /* Main.storyboard */,
 				22070B571E3655C800A626D5 /* Assets.xcassets */,
@@ -97,7 +97,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Frank.Chen;
 				TargetAttributes = {
 					22070B4C1E3655C800A626D5 = {
@@ -143,8 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22BA070A1E8539A600876A26 /* PageA.swift in Sources */,
 				22070B651E365A4600A626D5 /* SelectRowDelegate.swift in Sources */,
-				22070B531E3655C800A626D5 /* PageA.swift in Sources */,
 				22070B631E3656E400A626D5 /* PageB.swift in Sources */,
 				22070B511E3655C800A626D5 /* AppDelegate.swift in Sources */,
 			);
@@ -190,6 +190,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -239,6 +240,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
