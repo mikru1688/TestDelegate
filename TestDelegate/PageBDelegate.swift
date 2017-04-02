@@ -6,6 +6,6 @@
 //  Copyright © 2017年 Frank.Chen. All rights reserved.
 //
 
-protocol PageADelegate {
-    func pageA(_ pageB: PageB, didSelectedData data: String)
+protocol PageBDelegate {
+    func pageB(_ pageB: PageB, didSelectedData data: String)
 }

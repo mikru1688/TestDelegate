@@ -10,7 +10,7 @@ import UIKit
 
 class PageB: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var delegate: PageADelegate! // delegate
+    var delegate: PageBDelegate! // delegate
     var testDataTV: UITableView!
     var dataList: [String] = ["Apple", "Banana", "Cherry"] // 畫面上顯示的資料
     
@@ -57,7 +57,7 @@ class PageB: UIViewController, UITableViewDelegate, UITableViewDataSource {
     // 點選儲存格事件
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         _ = self.navigationController?.popViewController(animated: true) // 關閉此頁面
-        self.delegate.pageA(self, didSelectedData: self.dataList[indexPath.row]) // 呼叫PageA的selectedRow方法
+        self.delegate.pageB(self, didSelectedData: self.dataList[indexPath.row]) // 呼叫PageA的selectedRow方法
     }
     
 }

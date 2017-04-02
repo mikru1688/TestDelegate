@@ -7,7 +7,7 @@
 //
 import UIKit
 
-class PageA: UIViewController, PageADelegate {
+class PageA: UIViewController, PageBDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +44,7 @@ class PageA: UIViewController, PageADelegate {
     // MARK: - Page Delegate
     // ---------------------------------------------------------------------
     // 點擊PageB的cell所會觸發的delegate
-    func pageA(_ pageB: PageB, didSelectedData data: String) {
+    func pageB(_ pageB: PageB, didSelectedData data: String) {
         self.alertErrorMsg(errMsg: data)
     }
     
