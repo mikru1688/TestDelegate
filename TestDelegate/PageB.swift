@@ -10,7 +10,7 @@ import UIKit
 
 class PageB: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var delegate: SelectRowDelegate! // delegate
+    var delegate: PageADelegate! // delegate
     var testDataTV: UITableView!
     var dataList: [String] = ["Apple", "Banana", "Cherry"] // 畫面上顯示的資料
     
@@ -33,19 +33,11 @@ class PageB: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return dataList.count
     }
     
-    // MARK: - Delegate
-    // ---------------------------------------------------------------------
-    // 設定cell的高度
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
-    }
-    
     // 表格的儲存格設定
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var testCell = tableView.dequeueReusableCell(withIdentifier: "testCell")
+        var testCell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         if testCell == nil {
-            testCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "testCell")
-            testCell?.accessoryType = UITableViewCellAccessoryType.disclosureIndicator // 細節型態(右箭頭)
+            testCell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "Cell")
             testCell?.selectionStyle = UITableViewCellSelectionStyle.none // 選取的時侯無背景色
             testCell?.textLabel?.font = UIFont.systemFont(ofSize: 30)
         }
@@ -55,11 +47,17 @@ class PageB: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return testCell!
     }
     
+    // MARK: - Delegate
+    // ---------------------------------------------------------------------
+    // 設定cell的高度
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
     // 點選儲存格事件
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.navigationController?.popViewController(animated: true)
-        // 呼叫PageA的selectedRow方法
-        self.delegate.selectedRow(self, didSelectedData: self.dataList[indexPath.row])        
+        _ = self.navigationController?.popViewController(animated: true) // 關閉此頁面
+        self.delegate.pageA(self, didSelectedData: self.dataList[indexPath.row]) // 呼叫PageA的selectedRow方法
     }
     
 }

@@ -7,7 +7,7 @@
 //
 import UIKit
 
-class PageA: UIViewController, SelectRowDelegate {
+class PageA: UIViewController, PageADelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class PageA: UIViewController, SelectRowDelegate {
     // 切換至PageB
     func onClickToPageB(_ sender: UIButton) {
         let pageB: PageB = PageB()
-        pageB.delegate = self // 將自已指向PageB的delegate
+        pageB.delegate = self // 將協議書交給PageB並依照此協議書上的協議來叫我做事情
         self.navigationController?.pushViewController(pageB, animated: true)
     }
     
@@ -41,8 +41,10 @@ class PageA: UIViewController, SelectRowDelegate {
         self.present(alertController, animated: true, completion: nil)
     }
     
-    // 點擊畫面B的cell會觸發的delegate
-    func selectedRow(_ pageB: PageB, didSelectedData data: String) {
+    // MARK: - Page Delegate
+    // ---------------------------------------------------------------------
+    // 點擊PageB的cell所會觸發的delegate
+    func pageA(_ pageB: PageB, didSelectedData data: String) {
         self.alertErrorMsg(errMsg: data)
     }
     
