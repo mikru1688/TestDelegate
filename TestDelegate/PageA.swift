@@ -29,11 +29,11 @@ class PageA: UIViewController, PageBDelegate {
     // 切換至PageB
     func onClickToPageB(_ sender: UIButton) {
         let pageB: PageB = PageB()
-        pageB.delegate = self // 將協議書交給PageB並依照此協議書上的協議來叫我做事情
+        pageB.delegate = self // 由我(PageA)來代理你(PageB)
         self.navigationController?.pushViewController(pageB, animated: true)
     }
     
-    // 提示錯誤訊息
+    // 提示訊息
     func alertErrorMsg(errMsg: String) {
         let alertController = UIAlertController(title: "提示", message: errMsg, preferredStyle: .alert)
         let confirm = UIAlertAction(title: "確定", style: .default, handler: nil)
@@ -44,7 +44,7 @@ class PageA: UIViewController, PageBDelegate {
     // MARK: - Page Delegate
     // ---------------------------------------------------------------------
     // 點擊PageB的cell所會觸發的delegate
-    func pageB(_ pageB: PageB, didSelectedData data: String) {
+    func pageB(_ pageB: PageB, didSelectData data: String) {
         self.alertErrorMsg(errMsg: data)
     }
     

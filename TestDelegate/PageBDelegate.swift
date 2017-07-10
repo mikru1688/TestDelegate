@@ -7,5 +7,5 @@
 //
 
 protocol PageBDelegate {
-    func pageB(_ pageB: PageB, didSelectedData data: String)
+    func pageB(_ pageB: PageB, didSelectData data: String)
 }
